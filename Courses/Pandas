@@ -1,0 +1,39 @@
+Creating, Reading, and Writing
+
+1. To use pandas
+import pandas as pd
+
+2. Creating data
+2 core object in pandas: DataFrame and Series
+
+DataFrame:
+pd.DataFrame ({'Yes': [50, 21], 'No': [131, 2]})
+ 	Yes 	No
+0 	50 	131
+1 	21 	2
+
+pd.DataFrame({'Bob': ['I liked it.', 'It was awful.'], 
+              'Sue': ['Pretty good.', 'Bland.']},
+             index=['Product A', 'Product B'])
+
+ 	Bob 	Sue
+Product A 	I liked it. 	Pretty good.
+Product B 	It was awful. 	Bland.
+
+Series:
+pd.Series([30, 35, 40], index=['2015 Sales', '2016 Sales', '2017 Sales'], name='Product A')
+
+2015 Sales    30
+2016 Sales    35
+2017 Sales    40
+Name: Product A, dtype: int64
+
+3. Reading data files
+read = pd.read_csv ("Files_name_csv")
+
+Can use the shape attribute to check how large the resulting DataFrame
+read.shape()
+(Row, Column)
+
+Can examine the contents of the resultant DataFrame using the head() command, which grabs the first five rows
+read.head()
