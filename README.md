@@ -13,8 +13,6 @@ Repository ini berisi perjalanan belajar dan project saya di bidang Data Analysi
 -scikit-learn
 -SciPy
 
-## Contents
-
 ### Courses
 Materi dan latihan yang saya pelajari.
 
